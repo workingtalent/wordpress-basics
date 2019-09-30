@@ -2,12 +2,10 @@
 
 ### Enable MFA
 
-<<<<<<< HEAD
 ###supermeaui
-=======
 ### ### ###
 ## Titus ##
 ### ### ###
 ####Loek
 ### Brian
->>>>>>> master
+
