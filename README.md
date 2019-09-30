@@ -2,16 +2,13 @@
 
 ### Enable MFA
 
-<<<<<<< HEAD
 # Sjoerd is added
-=======
-<<<<<<< HEAD
+marnix is een toffe peer
+####Loek
+### Brian
 ###supermeaui
-=======
 ### ### ###
 ## Titus ##
 ### ### ###
 ####Loek
 ### Brian
->>>>>>> master
->>>>>>> master
