@@ -1,0 +1,13 @@
+{
+    "name": "sjoerd/wp",
+    "description": "x",
+    "require": {
+        "vlucas/phpdotenv": "^3.6"
+    },
+    "authors": [
+        {
+            "name": "Sjoerd",
+            "email": "sjoerdboonstra_626@hotmail.com"
+        }
+    ]
+}
