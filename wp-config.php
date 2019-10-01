@@ -1,4 +1,6 @@
 <?php
+/** Sets up dotenv */
+
 /**
  * The base configuration for WordPress
  *
@@ -20,13 +22,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', getenv('DB_NAME'));
+// define( 'DB_NAME', getenv('DB_NAME'));
+define( 'DB_NAME', 'wordpress');
 
 /** MySQL database username */
-define( 'DB_USER', getenv('DB_USER'));
+// define( 'DB_USER', getenv('DB_USER'));
+define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', getenv('DB_PASSWORD'));
+// define( 'DB_PASSWORD', getenv('DB_PASSWORD'));
+define( 'DB_PASSWORD', '' );
 
 /** MySQL hostname */
 define( 'DB_HOST', getenv('DB_HOST'));
@@ -63,7 +68,8 @@ define( 'NONCE_SALT',       getenv('DB_NONCE_SALT'));
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = getenv('DB_PREFIX');
+// $table_prefix = getenv('DB_PREFIX');
+$table_prefix = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -89,6 +95,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 /** Sets up WordPress vars and included files. */
 require_once( ABSPATH . 'wp-settings.php' );
 
-/** Sets up dotenv */
-require_once(__DIR__ . '/../vendor/autoload.php');
-(new \Dotenv\Dotenv(__DIR__.'/../'))->load();
+
+require_once(__DIR__ . '/vendor/autoload.php');
+// (new \Dotenv\Dotenv(__DIR__.'/../'))->load();
+
+$dotenv = Dotenv\Dotenv::create(__DIR__);
+$dotenv->load();
+
